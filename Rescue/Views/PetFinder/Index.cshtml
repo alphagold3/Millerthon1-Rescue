@@ -1,0 +1,432 @@
+﻿
+@{
+    ViewData["Title"] = "Pet Finder";
+}
+
+
+<div class="container-fluid">
+
+    <!--- filters -->
+    <div class="row">
+        <div class="col-sm">
+            <div class="btn-group">
+                <button type="button" class="btn btn-white btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Size
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Size 1</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">xfff 2</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">xaaaaaaaaaaaaaaaaa 2</a>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-white btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Breeds
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Breed 1</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">xfff 2</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#"> 2</a>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-white btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sex
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Sex 1</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-white btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Distiance
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Distiance 1</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">xfff 2</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">xaaaaaaaaaaaaaaaaa 2</a>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-white btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Age
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Age 1</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">xfff 2</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">xaaaaaaaaaaaaaaaaa 2</a>
+                </div>
+            </div>
+
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-white btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Type
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Type 1</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">xfff 2</a>
+                    <a class="dropdown-item" href="#">x 2</a>
+                    <a class="dropdown-item" href="#">2</a>
+                </div>
+            </div>
+
+            <div class=" d-inline-block font-smallererest">
+                430 results
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="container">
+    <!-- Dog Panels-->
+    <div class="row">
+        <div class="col-sm col-lg-4">
+            <!-- 'Edit' Card-->
+            <div class="card mt-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.akc.org/content/article-body-image/saluki_dog_pictures.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <!-- Card Title -->
+                    <h5 class="card-title mb-0">CoCo 1yr Male Pitbull</h5>
+                    <span class="card-subtitle mb-2 font-smallerer" id="favoritesCount_1233" data-count="24">
+                        <i class="fas fa-heart"></i> 222
+                    </span>
+                    <h6 class="card-subtitle mb-2 mt-2 font-weight-bold font-small text-center">Pit Bull Terrier - Adopt - Male</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <span class="card-link"><i class="fas fa-share-alt"></i></span>
+                    <span class="float-right">
+                        <button type="button" class="btn btn-sm btn-outline-primary pm-sm-2 m-0">Edit</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm col-lg-4">
+            <!-- 'Adopt' Card -->
+            <div class="card mt-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.akc.org/content/article-body-image/afghanhound_dog_pictures_.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <!-- Card Title -->
+                    <h5 class="card-title mb-0">CoCo 1yr Male Pitbull</h5>
+                    <!-- Heart Counter -->
+                    <!-- Gotta changeID, datac-count to be data-driven -->
+                    <span class="card-subtitle mb-2 font-smallerer" id="favoritesCount_123" data-count="24">
+                        <i class="fas fa-heart"></i> 24
+                    </span>
+                    <!-- Pet attributes -->
+                    <h6 class="card-subtitle mb-2 mt-2 font-weight-bold font-small text-center">Pit Bull Terrier - Adopt - Male</h6>
+                    <!-- Pet Description (short) -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- Card Links -->
+                    <span class="card-link"><i class="fas fa-share-alt"></i></span>
+                    <span class="card-link" id="favorites_123" data-on="0" onclick="updateFavorites(123);">
+                        <i class="far fa-heart"></i>
+                    </span>
+                    <!-- flips between edit and 'adopt a pet'-->
+                    <span class="float-right">
+                        <button type="button" class="btn btn-sm btn-outline-primary p-sm-1 m-0">Apply For Adoption</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOR DISPLAY ONLY -->
+
+        <div class="col-sm col-lg-4">
+            <!-- 'Adopt' Card -->
+            <div class="card mt-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.akc.org/content/article-body-image/keeshond_dog_pictures.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <!-- Card Title -->
+                    <h5 class="card-title mb-0">CoCo 1yr Male Pitbull</h5>
+                    <!-- Heart Counter -->
+                    <!-- Gotta changeID, datac-count to be data-driven -->
+                    <span class="card-subtitle mb-2 font-smallerer" id="favoritesCount_123" data-count="24">
+                        <i class="fas fa-heart"></i> 24
+                    </span>
+                    <!-- Pet attributes -->
+                    <h6 class="card-subtitle mb-2 mt-2 font-weight-bold font-small text-center">Pit Bull Terrier - Adopt - Male</h6>
+                    <!-- Pet Description (short) -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- Card Links -->
+                    <span class="card-link"><i class="fas fa-share-alt"></i></span>
+                    <span class="card-link" id="favorites_123" data-on="0" onclick="updateFavorites(1232333);">
+                        <i class="far fa-heart"></i>
+                    </span>
+                    <!-- flips between edit and 'adopt a pet'-->
+                    <span class="float-right">
+                        <button type="button" class="btn btn-sm btn-outline-primary p-sm-1 m-0">Apply For Adoption</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm col-lg-4">
+            <!-- 'Adopt' Card -->
+            <div class="card mt-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.akc.org/content/article-body-image/keeshond_dog_pictures.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <!-- Card Title -->
+                    <h5 class="card-title mb-0">CoCo 1yr Male Pitbull</h5>
+                    <!-- Heart Counter -->
+                    <!-- Gotta changeID, datac-count to be data-driven -->
+                    <span class="card-subtitle mb-2 font-smallerer" id="favoritesCount_123" data-count="24">
+                        <i class="fas fa-heart"></i> 24
+                    </span>
+                    <!-- Pet attributes -->
+                    <h6 class="card-subtitle mb-2 mt-2 font-weight-bold font-small text-center">Pit Bull Terrier - Adopt - Male</h6>
+                    <!-- Pet Description (short) -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- Card Links -->
+                    <span class="card-link"><i class="fas fa-share-alt"></i></span>
+                    <span class="card-link" id="favorites_123" data-on="0" onclick="updateFavorites(1232333);">
+                        <i class="far fa-heart"></i>
+                    </span>
+                    <!-- flips between edit and 'adopt a pet'-->
+                    <span class="float-right">
+                        <button type="button" class="btn btn-sm btn-outline-primary p-sm-1 m-0">Apply For Adoption</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm col-lg-4">
+            <!-- 'Adopt' Card -->
+            <div class="card mt-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.akc.org/content/article-body-image/keeshond_dog_pictures.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <!-- Card Title -->
+                    <h5 class="card-title mb-0">CoCo 1yr Male Pitbull</h5>
+                    <!-- Heart Counter -->
+                    <!-- Gotta changeID, datac-count to be data-driven -->
+                    <span class="card-subtitle mb-2 font-smallerer" id="favoritesCount_123" data-count="24">
+                        <i class="fas fa-heart"></i> 24
+                    </span>
+                    <!-- Pet attributes -->
+                    <h6 class="card-subtitle mb-2 mt-2 font-weight-bold font-small text-center">Pit Bull Terrier - Adopt - Male</h6>
+                    <!-- Pet Description (short) -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- Card Links -->
+                    <span class="card-link"><i class="fas fa-share-alt"></i></span>
+                    <span class="card-link" id="favorites_123" data-on="0" onclick="updateFavorites(1232333);">
+                        <i class="far fa-heart"></i>
+                    </span>
+                    <!-- flips between edit and 'adopt a pet'-->
+                    <span class="float-right">
+                        <button type="button" class="btn btn-sm btn-outline-primary p-sm-1 m-0">Apply For Adoption</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm col-lg-4">
+            <!-- 'Adopt' Card -->
+            <div class="card mt-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.akc.org/content/article-body-image/keeshond_dog_pictures.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <!-- Card Title -->
+                    <h5 class="card-title mb-0">CoCo 1yr Male Pitbull</h5>
+                    <!-- Heart Counter -->
+                    <!-- Gotta changeID, datac-count to be data-driven -->
+                    <span class="card-subtitle mb-2 font-smallerer" id="favoritesCount_123" data-count="24">
+                        <i class="fas fa-heart"></i> 24
+                    </span>
+                    <!-- Pet attributes -->
+                    <h6 class="card-subtitle mb-2 mt-2 font-weight-bold font-small text-center">Pit Bull Terrier - Adopt - Male</h6>
+                    <!-- Pet Description (short) -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- Card Links -->
+                    <span class="card-link"><i class="fas fa-share-alt"></i></span>
+                    <span class="card-link" id="favorites_123" data-on="0" onclick="updateFavorites(1232333);">
+                        <i class="far fa-heart"></i>
+                    </span>
+                    <!-- flips between edit and 'adopt a pet'-->
+                    <span class="float-right">
+                        <button type="button" class="btn btn-sm btn-outline-primary p-sm-1 m-0">Apply For Adoption</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm col-lg-4">
+            <!-- 'Adopt' Card -->
+            <div class="card mt-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.akc.org/content/article-body-image/keeshond_dog_pictures.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <!-- Card Title -->
+                    <h5 class="card-title mb-0">CoCo 1yr Male Pitbull</h5>
+                    <!-- Heart Counter -->
+                    <!-- Gotta changeID, datac-count to be data-driven -->
+                    <span class="card-subtitle mb-2 font-smallerer" id="favoritesCount_123" data-count="24">
+                        <i class="fas fa-heart"></i> 24
+                    </span>
+                    <!-- Pet attributes -->
+                    <h6 class="card-subtitle mb-2 mt-2 font-weight-bold font-small text-center">Pit Bull Terrier - Adopt - Male</h6>
+                    <!-- Pet Description (short) -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- Card Links -->
+                    <span class="card-link"><i class="fas fa-share-alt"></i></span>
+                    <span class="card-link" id="favorites_123" data-on="0" onclick="updateFavorites(1232333);">
+                        <i class="far fa-heart"></i>
+                    </span>
+                    <!-- flips between edit and 'adopt a pet'-->
+                    <span class="float-right">
+                        <button type="button" class="btn btn-sm btn-outline-primary p-sm-1 m-0">Apply For Adoption</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm col-lg-4">
+            <!-- 'Adopt' Card -->
+            <div class="card mt-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.akc.org/content/article-body-image/keeshond_dog_pictures.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <!-- Card Title -->
+                    <h5 class="card-title mb-0">CoCo 1yr Male Pitbull</h5>
+                    <!-- Heart Counter -->
+                    <!-- Gotta changeID, datac-count to be data-driven -->
+                    <span class="card-subtitle mb-2 font-smallerer" id="favoritesCount_123" data-count="24">
+                        <i class="fas fa-heart"></i> 24
+                    </span>
+                    <!-- Pet attributes -->
+                    <h6 class="card-subtitle mb-2 mt-2 font-weight-bold font-small text-center">Pit Bull Terrier - Adopt - Male</h6>
+                    <!-- Pet Description (short) -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- Card Links -->
+                    <span class="card-link"><i class="fas fa-share-alt"></i></span>
+                    <span class="card-link" id="favorites_123" data-on="0" onclick="updateFavorites(1232333);">
+                        <i class="far fa-heart"></i>
+                    </span>
+                    <!-- flips between edit and 'adopt a pet'-->
+                    <span class="float-right">
+                        <button type="button" class="btn btn-sm btn-outline-primary p-sm-1 m-0">Apply For Adoption</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm col-lg-4">
+            <!-- 'Adopt' Card -->
+            <div class="card mt-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.akc.org/content/article-body-image/keeshond_dog_pictures.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <!-- Card Title -->
+                    <h5 class="card-title mb-0">CoCo 1yr Male Pitbull</h5>
+                    <!-- Heart Counter -->
+                    <!-- Gotta changeID, datac-count to be data-driven -->
+                    <span class="card-subtitle mb-2 font-smallerer" id="favoritesCount_123" data-count="24">
+                        <i class="fas fa-heart"></i> 24
+                    </span>
+                    <!-- Pet attributes -->
+                    <h6 class="card-subtitle mb-2 mt-2 font-weight-bold font-small text-center">Pit Bull Terrier - Adopt - Male</h6>
+                    <!-- Pet Description (short) -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- Card Links -->
+                    <span class="card-link"><i class="fas fa-share-alt"></i></span>
+                    <span class="card-link" id="favorites_123" data-on="0" onclick="updateFavorites(1232333);">
+                        <i class="far fa-heart"></i>
+                    </span>
+                    <!-- flips between edit and 'adopt a pet'-->
+                    <span class="float-right">
+                        <button type="button" class="btn btn-sm btn-outline-primary p-sm-1 m-0">Apply For Adoption</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm col-lg-4">
+            <!-- 'Adopt' Card -->
+            <div class="card mt-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.akc.org/content/article-body-image/keeshond_dog_pictures.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <!-- Card Title -->
+                    <h5 class="card-title mb-0">CoCo 1yr Male Pitbull</h5>
+                    <!-- Heart Counter -->
+                    <!-- Gotta changeID, datac-count to be data-driven -->
+                    <span class="card-subtitle mb-2 font-smallerer" id="favoritesCount_123" data-count="24">
+                        <i class="fas fa-heart"></i> 24
+                    </span>
+                    <!-- Pet attributes -->
+                    <h6 class="card-subtitle mb-2 mt-2 font-weight-bold font-small text-center">Pit Bull Terrier - Adopt - Male</h6>
+                    <!-- Pet Description (short) -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- Card Links -->
+                    <span class="card-link"><i class="fas fa-share-alt"></i></span>
+                    <span class="card-link" id="favorites_123" data-on="0" onclick="updateFavorites(1232333);">
+                        <i class="far fa-heart"></i>
+                    </span>
+                    <!-- flips between edit and 'adopt a pet'-->
+                    <span class="float-right">
+                        <button type="button" class="btn btn-sm btn-outline-primary p-sm-1 m-0">Apply For Adoption</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- END OF DISPLAY ONLY -->
+
+
+    </div>
+</div>
+
+@section Scripts{ 
+    
+    <script type="text/javascript">
+
+    
+
+        function updateFavorites(favID) {
+            console.log('favorited ' + favID);
+
+            var favoriteOnHeart = '<i class="fas fa-heart"></i>';
+            var favoriteOffHeart = '<i class="far fa-heart"></i>';
+
+            var favoriteElement = $('#favoritesCount_' + favID);
+            var favoriteCount = favoriteElement.data("count");
+
+            
+            var favoriteHeart = $("#favorites_" + favID);
+            var favoriteOn = favoriteHeart.data("on");
+
+            if (favoriteOn) {
+                favoriteHeart.html(favoriteOffHeart);
+                favoriteHeart.data("on", 0);
+                favoriteElement.data("count", (favoriteCount - 1));
+                favoriteElement.html(favoriteOnHeart + ' ' + (favoriteCount - 1));
+            }
+            else {
+                favoriteHeart.html(favoriteOnHeart);
+                favoriteHeart.data("on", 1);
+                favoriteElement.data("count", (favoriteCount + 1));
+                favoriteElement.html(favoriteOnHeart + ' ' + (favoriteCount + 1));
+            }
+        }
+    </script>
+
+}
