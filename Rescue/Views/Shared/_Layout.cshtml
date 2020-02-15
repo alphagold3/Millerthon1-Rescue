@@ -9,25 +9,36 @@
     <link rel="stylesheet" href="~/lib/mdbootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/lib/mdbootstrap/css/mdb.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+<<<<<<< HEAD
+=======
+    
+>>>>>>> Layout
+    <script type="text/javascript" src="~/lib/mdbootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="~/lib/mdbootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="~/lib/mdbootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/lib/mdbootstrap/js/mdb.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Rescue</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>https://localhost:44386/
                 </button>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Rescue</a>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="PetFinder" asp-action="Index">PetFinder</a>
                         </li>
                     </ul>
+                </div>
+                <div id="idDiv" style="display:none;">0</div>
+                <div id="userSection">
+                    
                 </div>
             </div>
         </nav>
@@ -38,16 +49,85 @@
         </main>
     </div>
 
+    <script>
+        function UpdateUserSection() {
+            var userSection = $("#userSection");
+            if ($("#idDiv").text() == 0) {
+                userSection.empty();
+                userSection.append("<button type='button' class='btn btn-link' onclick='DisplayLoginPopup()'>Sign In</button><a type='button' class='btn btn-primary' href='/Wizard/'>Join for free</a>");
+            } else {
+                userSection.empty();
+                userSection.append("<span></span> <button type='button' class='btn btn-link' onclick='LogUserOut()'>John Smith</a>");
+            }
+        }
+
+        function DisplayLoginPopup() {
+            $("#login").modal("show");
+        }
+
+        function LogUserIn() {
+            var userName = $("#username").val();
+            var password = $("#password").val();
+            console.log($("#username"));
+            if (userName && password) {
+                $("#idDiv").text("1");                
+                $("#login").modal("hide");
+                UpdateUserSection();
+            }
+        }
+
+        function LogUserOut() {
+            $("#idDiv").text("0");
+            UpdateUserSection();
+        }
+
+        $(document).ready(function () {
+            UpdateUserSection();
+        });
+    </script>
+    
+    <div id="login" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Log In to Rescue</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                            Username
+                        </div>
+                        <div class="col-6">
+                            <input type="text" id="username" />
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:20px;">
+                        <div class="col-6">
+                            Password
+                        </div>
+                        <div class="col-6">
+                            <input type="password" id="password" />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="LogUserIn()">Log in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - Rescue - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            Millerthon 1 - <a href="https://github.com/alphagold3/Millerthon1-Rescue">GitHub</a>
         </div>
     </footer>
-    <script type="text/javascript" src="~/lib/mdbootstrap/js/jquery.min.js"></script>
-    <script type="text/javascript" src="~/lib/mdbootstrap/js/popper.min.js"></script>
-    <script type="text/javascript" src="~/lib/mdbootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="~/lib/mdbootstrap/js/mdb.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+<<<<<<< HEAD
+    
+=======
+>>>>>>> Layout
 </body>
 </html>
