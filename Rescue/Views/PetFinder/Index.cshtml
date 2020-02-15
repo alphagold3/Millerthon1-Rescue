@@ -4,8 +4,14 @@
 }
 
 
-<div class="container-fluid">
-
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="float-right">
+                <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#addNewModal">+ Add</button>
+            </div>
+        </div>
+    </div>
     <!--- filters -->
     <div class="row">
         <div class="col-sm">
@@ -23,6 +29,8 @@
                     <a class="dropdown-item" href="#">xaaaaaaaaaaaaaaaaa 2</a>
                 </div>
             </div>
+
+            <!-- Essentially Repeated code for drop downs -->
             <div class="btn-group">
                 <button type="button" class="btn btn-white btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Breeds
@@ -93,12 +101,30 @@
                 </div>
             </div>
 
-            <div class=" d-inline-block font-smallererest">
+            <!-- END Essentially Repeated code for drop downs -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <!-- This should be a real number at some point -->
+            <div class="d-inline font-smallererest float-left mt-3">
                 430 results
+            </div>
+            <div class="d-inline-block font-smallererest float-right mt-3">
+                <div class="btn-group">
+                    <div  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort By
+                    </div>
+                    <div class="dropdown-menu font-smallererest ">
+                        <a class="dropdown-item" href="#">x</a>
+                        <a class="dropdown-item" href="#">y</a>
+                        <a class="dropdown-item" href="#">asdf</a>
+                        <a class="dropdown-item" href="#">z 42</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
 
 </div>
 
@@ -394,6 +420,8 @@
 
     </div>
 </div>
+
+<partial name="/Views/PetFinder/Modals/_AddPet.cshtml" />
 
 @section Scripts{ 
     
