@@ -1,0 +1,1 @@
+This folder is for a place to store any design files that were created during the project.
